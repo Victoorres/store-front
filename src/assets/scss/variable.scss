@@ -10,9 +10,8 @@ $themecolor-alt: #26c6da;
 $theme-light:#fff;
 $theme-dark:#212529;
 
-$gredient-1: linear-gradient(to right, #0178bc 0%, #00bdda 100%);
 
-$skin1: $gredient-1;
+$skin1: #fff;
 $skin6:#fff;
 
 /*Topbar Colors*/
@@ -136,7 +135,7 @@ gray-dark: $gray-800);
 $primary: $blue !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
-$info: $blue !default;
+$info: $theme-dark !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;

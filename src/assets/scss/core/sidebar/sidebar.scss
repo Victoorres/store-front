@@ -142,7 +142,8 @@ sidebar navigation
                 &:hover {
                     color: $info;
 					i {
-						color: $info;
+                        color: $info;
+                        font: bold;
 					}
                 }
 				&.active {
