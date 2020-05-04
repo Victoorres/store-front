@@ -27,6 +27,11 @@ import { SpinnerComponent } from './shared/spinner.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { HomeComponent } from './pages/home/home.component';
+import { NovidadesComponent } from './pages/novidades/novidades.component';
+import { MasculinoComponent } from './pages/masculino/masculino.component';
+import { FemininoComponent } from './pages/feminino/feminino.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 	suppressScrollX: true,
@@ -42,7 +47,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		FullComponent,
 		NavigationComponent,
 		SidebarComponent,
-		BreadcrumbComponent
+		BreadcrumbComponent,
+		HomeComponent,
+		NovidadesComponent,
+		MasculinoComponent,
+		FemininoComponent,
+		PerfilComponent
 	],
 	imports: [
 		CommonModule,
