@@ -52,4 +52,4 @@ import { ToastsContainer } from './toast/toast-container';
     ToastsContainer
   ]
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

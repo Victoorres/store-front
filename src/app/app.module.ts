@@ -27,18 +27,13 @@ import { SpinnerComponent } from './shared/spinner.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import { HomeComponent } from './pages/home/home.component';
-import { NovidadesComponent } from './pages/novidades/novidades.component';
-import { MasculinoComponent } from './pages/masculino/masculino.component';
-import { FemininoComponent } from './pages/feminino/feminino.component';
-import { PerfilComponent } from './pages/perfil/perfil.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 	suppressScrollX: true,
 	wheelSpeed: 1,
 	wheelPropagation: true,
 	minScrollbarLength: 20
-};   
+};
 
 @NgModule({
 	declarations: [
@@ -47,12 +42,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		FullComponent,
 		NavigationComponent,
 		SidebarComponent,
-		BreadcrumbComponent,
-		HomeComponent,
-		NovidadesComponent,
-		MasculinoComponent,
-		FemininoComponent,
-		PerfilComponent
+		BreadcrumbComponent
 	],
 	imports: [
 		CommonModule,
@@ -69,11 +59,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 			provide: LocationStrategy,
 			useClass: PathLocationStrategy
 		},
-	{
+		{
 			provide: PERFECT_SCROLLBAR_CONFIG,
 			useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
 		}
 	],
 	bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
