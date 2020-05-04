@@ -10,10 +10,6 @@ export const Approutes: Routes = [
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {
-        path: 'dashboard',
-        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
-      },
-      {
         path: 'home',
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
@@ -24,6 +20,10 @@ export const Approutes: Routes = [
       {
         path: 'feminino',
         loadChildren: () => import('./pages/feminino/feminino.module').then(m => m.FemininoModule)
+      },
+      {
+        path: 'masculino',
+        loadChildren: () => import('./pages/masculino/masculino.module').then(m => m.MasculinoModule)
       },
       {
         path: 'perfil',
