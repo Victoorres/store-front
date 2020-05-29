@@ -1,10 +1,10 @@
 package br.com.store;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages={"br.com.store.core"})
-
+@SpringBootApplication
 public class StoreApplication {
 
 	public static void main(String[] args) {

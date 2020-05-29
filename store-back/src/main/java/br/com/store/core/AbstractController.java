@@ -1,6 +1,7 @@
 package br.com.store.core;
 
 import br.com.store.exceptions.ErrorExcep;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+
 
 public class AbstractController<T> {
 
@@ -23,15 +25,13 @@ public class AbstractController<T> {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> findById(@PathVariable(name = "id") long id){
-        System.out.println("asd");
 
         if(!service.exist(id)){
-            throw new ErrorExcep("Usuario não encontrado");
-        }else{
+        throw new ErrorExcep("Usuario não encontrado");
         }
 
         return new ResponseEntity<>(service.findById(id), HttpStatus.OK);
-
+        
     }
 
     @PostMapping

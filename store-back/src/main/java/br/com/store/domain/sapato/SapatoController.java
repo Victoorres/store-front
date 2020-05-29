@@ -1,4 +1,4 @@
-package br.com.store.domain.camisa;
+package br.com.store.domain.sapato;
 
 import br.com.store.core.AbstractController;
 import br.com.store.exceptions.ErrorExcep;
@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/camisa")
-public class CamisaController extends AbstractController<Camisa> {
+@RequestMapping("/sapato")
+public class SapatoController extends AbstractController<Sapato> {
 
     @Override
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody() Camisa camisa) {
+    public ResponseEntity<?> save(@RequestBody() Sapato sapato) {
 
        
-        if (camisa.getNome() == null) {
+        if (sapato.getNome() == null) {
         throw new ErrorExcep("O nome não pode ficar vazio");
         }
-        return new ResponseEntity<>(service.save(camisa), HttpStatus.OK);
+        return new ResponseEntity<>(service.save(sapato), HttpStatus.OK);
        
 
     }

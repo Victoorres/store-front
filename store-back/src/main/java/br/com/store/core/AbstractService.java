@@ -2,8 +2,11 @@ package br.com.store.core;
 
 import java.util.List;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 
 public class AbstractService<T> implements IService<T> {
 

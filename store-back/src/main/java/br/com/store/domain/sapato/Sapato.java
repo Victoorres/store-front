@@ -1,4 +1,4 @@
-package br.com.store.domain.camisa;
+package br.com.store.domain.sapato;
 
 import java.io.Serializable;
 
@@ -18,9 +18,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "camisa")
+@Table(name = "sapato")
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-public class Camisa implements Serializable{
+public class Sapato implements Serializable{
     
     /**
      *
@@ -36,5 +36,4 @@ public class Camisa implements Serializable{
     private String tamanho;
     private String marca;
     private float valor;
-
 }
