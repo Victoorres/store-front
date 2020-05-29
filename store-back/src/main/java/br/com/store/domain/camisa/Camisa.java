@@ -1,4 +1,4 @@
-package br.com.store.entity.camisa;
+package br.com.store.domain.camisa;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,13 +1,12 @@
-package com.spring_arquitetura.spring_arquitetura.exceptions;
+package br.com.store.exceptions;
 
 
 
 import lombok.Getter;
 
 
-
 @Getter
-public class ResourceNotFoundDetails extends ErrorDetails{
+public class ResourceNotFoundDetails extends ErrorDetails {
 
     public static final class Builder {
         private String title;

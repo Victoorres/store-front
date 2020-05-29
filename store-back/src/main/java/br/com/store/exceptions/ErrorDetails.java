@@ -1,4 +1,4 @@
-package com.spring_arquitetura.spring_arquitetura.exceptions;
+package br.com.store.exceptions;
 
 
 public class ErrorDetails {
