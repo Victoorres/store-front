@@ -2,13 +2,10 @@ package br.com.store.core;
 
 import java.util.List;
 
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-
-public class AbstractService<T> implements com.spring_arquitetura.spring_arquitetura.core.IService<T> {
+public class AbstractService<T> implements br.com.store.core.IService<T> {
 
     @Autowired
     protected JpaRepository<T, Long> repository;

@@ -7,5 +7,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CamisaRepository extends JpaRepository<br.com.store.entity.camisa.Camisa, Long> {
 
-
 }

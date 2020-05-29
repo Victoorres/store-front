@@ -17,12 +17,10 @@ public class CamisaController extends br.com.store.core.AbstractController<br.co
     @PostMapping
     public ResponseEntity<?> save(@RequestBody() br.com.store.entity.camisa.Camisa camisa) {
 
-
         if (camisa.getNome() == null) {
-            throw new com.spring_arquitetura.spring_arquitetura.exceptions.ErrorExcep("O nome não pode ficar fazio");
+            throw new com.spring_arquitetura.spring_arquitetura.exceptions.ErrorExcep("O nome não pode ser vazio");
         }
         return new ResponseEntity<>(service.save(camisa), HttpStatus.OK);
-
 
     }
 }
