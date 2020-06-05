@@ -1,1 +1,31 @@
-<p>masculino works!</p>
+<form [formGroup]="roupaMasculinaForm" novalidate>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="card card-title">
+            <button class="ti-plus btn btn-danger col-sm-2" (click)="addRoupaMasculina()"></button>
+          </div>
+          <div class="table-responsive m-t-40">
+            <table class="table stylish-table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Preço</th>
+                  <th>Tamanho</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>''</td>
+                  <td>''</td>
+                  <td>''</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

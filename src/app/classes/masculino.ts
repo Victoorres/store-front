@@ -1,8 +1,6 @@
-export class Camisa {
+export class Masculino {
   id: number;
   nome: string;
   tamanho: string;
   preco: number;
-  desconto: number;
-  lancamento: boolean;
 }

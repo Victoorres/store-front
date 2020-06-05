@@ -1,8 +1,6 @@
-export class Vestido {
+export class Feminino {
   id: number;
   nome: string;
   tamanho: string;
   preco: number;
-  desconto: number;
-  lancamento: boolean;
 }
